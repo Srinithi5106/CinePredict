@@ -76,24 +76,8 @@ def show_sentiment():
     </div>
     """, unsafe_allow_html=True)
 
-    # Sample buttons
-    st.markdown("**Try a sample review:**")
-    s1, s2, s3, s4 = st.columns(4)
-    sample = ""
-    if s1.button("Glowing Review", use_container_width=True):
-        sample = "Absolute masterpiece. Breathtaking visuals, brilliant performances, and an epic story that is emotionally powerful and utterly unforgettable. A must-watch blockbuster."
-    if s2.button("Negative Review", use_container_width=True):
-        sample = "Terrible and boring. A complete waste of time. The plot is awful and the acting is dreadful. Painfully slow and disappointing flop. Skip this one entirely."
-    if s3.button("Mixed Review", use_container_width=True):
-        sample = "Some stunning moments but overall the film feels bloated and generic. The cast tries their best but the script is predictable. Not bad, not great — just average."
-    if s4.button("Neutral Logline", use_container_width=True):
-        sample = "A scientist discovers an anomaly in deep space and must work with a crew to investigate. The mission takes them further than expected."
-
-    st.markdown("<br>", unsafe_allow_html=True)
-
     review = st.text_area(
         "Paste your review, synopsis, or trailer description below",
-        value=sample,
         height=140,
         placeholder="Type or paste any text here and click Analyse...",
         label_visibility="visible",
