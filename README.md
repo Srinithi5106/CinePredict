@@ -1,4 +1,4 @@
-# CinePredict_2.0# 🎬 CinePredict — Box Office Revenue Prediction Engine
+# CinePredict 🎬 CinePredict — Box Office Revenue Prediction Engine
 
 ML Lab Project | Netflix-Styled Streamlit App | Team of 6
 
